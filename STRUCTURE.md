@@ -29,7 +29,12 @@ This repository contains two related deliverables:
 ├── data/                 # Canonical control catalogue (JSON + CSV)
 ├── database/             # PostgreSQL starter schema (multi-tenant)
 ├── deliverables/         # Corrected Excel workbook
-├── deployment/           # docker-compose + env template for Postgres
+├── hosting/              # Cloud + on-prem hosting guides, docker-compose, env template
+│   ├── README.md         # Hosting decision guide
+│   ├── CLOUD.md          # Cloud platform recommendations
+│   ├── ON_PREMISES.md    # Self-hosted / air-gapped recommendations
+│   ├── docker-compose.yml# Local/on-prem PostgreSQL
+│   └── .env.example      # DB env template
 ├── docs/                 # GRC architecture, security, audit, roadmap, etc.
 ├── scripts/              # Catalog validator + workbook formula repair
 ├── source/               # Original supplied PDF, workbook, workflow image

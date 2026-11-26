@@ -14,7 +14,7 @@
 - `docs/` — project charter, requirements, enterprise architecture, security architecture, IT audit, GRC, security & compliance, system hardening, data model, threat model and operating model.
 - `database/schema.sql` — PostgreSQL starter schema.
 - `backend/` — FastAPI starter service with health and control-catalog endpoints; assessment persistence/authentication are intentionally marked as implementation work.
-- `deployment/` — Docker Compose for local PostgreSQL and environment template.
+- `hosting/` — cloud and on-premises hosting guides, Docker Compose for local PostgreSQL, and environment template.
 - `scripts/` — catalog validation and corrected workbook formula repair.
 - `deliverables/` — corrected workbook copy; original source workbook remains unchanged in `source/`.
 
@@ -25,8 +25,8 @@ Open `app/index.html` in a modern browser. The standalone application stores ass
 ## Start the API/database scaffold
 
 1. Install Docker Desktop / Docker Engine and Docker Compose.
-2. Copy `deployment/.env.example` to `deployment/.env` and change the sample password.
-3. From the project root run `docker compose -f deployment/docker-compose.yml --env-file deployment/.env up -d db`.
+2. Copy `hosting/.env.example` to `hosting/.env` and change the sample password.
+3. From the project root run `docker compose -f hosting/docker-compose.yml --env-file hosting/.env up -d db`.
 4. Create a Python virtual environment in `backend/`, install `backend/requirements.txt`, set `DATABASE_URL` and run `uvicorn app.main:app --reload` from `backend/`.
 5. Open `/docs` on the local API server for the starter OpenAPI interface.
 

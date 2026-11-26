@@ -129,16 +129,21 @@ To switch from Local Demo mode to a production or development Supabase project:
 
 ## Validation Status
 
-- [x] **Dependencies**: Fully installed (`node_modules` present, audited).
-- [x] **TypeScript**: Verified (`tsc --noEmit` passes with 0 errors).
-- [x] **Production Build**: Verified (`next build` compiles and prerenders static routes cleanly).
-- [x] **Note Allocation Feature**: Implemented, styled, and validated across UI and database schema.
-- [x] **Pipeline Verification**: Executed `./check-linux.sh` successfully with exit code `0`.
-- See [`VALIDATION_STATUS.md`](VALIDATION_STATUS.md) and [`TODAY_LAUNCH_CHECKLIST.md`](TODAY_LAUNCH_CHECKLIST.md) for complete verification gates.
+Verified on 2026-11-26 (Node.js v20.19.2):
+
+- [x] **Dependencies**: Installed via `npm install` (`node_modules` present, `package-lock.json` generated).
+- [x] **TypeScript**: `npm run typecheck` (`tsc --noEmit`) passes with 0 errors.
+- [x] **Production Build**: `npm run build` compiles and prerenders static routes cleanly.
+- [x] **Note Allocation Feature**: Implemented across UI and database schema.
+- [x] **GRC Catalog**: `python3 scripts/validate_catalog.py` → PASS (11 domains, 169 controls, unique IDs).
+- See [`VALIDATION_STATUS.md`](VALIDATION_STATUS.md) and [`TODAY_LAUNCH_CHECKLIST.md`](TODAY_LAUNCH_CHECKLIST.md) for details.
+
+> Node.js 22 LTS is recommended; `@supabase/supabase-js` deprecates Node.js 20 for future releases.
 
 ## Recent changes
 
-- Refactored C‑Suite member definitions and helper into a dedicated module **`app/csuite.ts`**, and updated imports in `app/page.tsx` to resolve the extra‑export TypeScript error.
-- Added quick‑allocate chip tray and C‑Suite filter UI enhancements.
-- Updated documentation to reflect the new module structure and the successful production build.
-- Noted the Supabase client warning about Node.js 20 deprecation (upgrade to Node.js 22 recommended).
+- Added `run-local.sh` and `check-linux.sh` helper scripts and `.env.example` referenced by this README.
+- Renamed the misnamed `gitignore` to `.gitignore` so `node_modules/`, `.next/`, and `.env*` are actually ignored.
+- Removed the dead `pages/_document.tsx` (App Router `app/layout.tsx` renders the document).
+- Renamed the GRC archive readme to `GRC_README.md` and regenerated `FILE_INVENTORY.md`.
+- Refactored C‑Suite member definitions into `app/csuite.ts`; added quick‑allocate chip tray and C‑Suite filter UI.

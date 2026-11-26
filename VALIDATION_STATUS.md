@@ -8,6 +8,8 @@ _Last verified: 2026-11-26_
 - [x] **TypeScript**: `npm run typecheck` (`tsc --noEmit`) passes with 0 errors.
 - [x] **Production Build**: `npm run build` (`next build`) compiles and prerenders static routes cleanly.
 - [x] **Note Allocation Feature**: Implemented across UI and database schema (`supabase/schema.sql`).
+- [x] **Dev server smoke test**: `next dev` serves `GET /` → HTTP 200 with correct title/content.
+- [x] **Structure documented**: See [`STRUCTURE.md`](STRUCTURE.md).
 
 ### Environment notes
 

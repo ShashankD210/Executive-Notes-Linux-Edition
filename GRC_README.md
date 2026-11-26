@@ -6,8 +6,9 @@
 
 ## What is included
 
-- `source/` — original supplied PDF, workbook, workflow image and v1 application.
-- `app/index.html` — extended standalone web application (local browser storage).
+- `source/` — original supplied PDF, workbook and workflow image.
+- `app/index.html` — current extended standalone web application (local browser storage).
+- `app/releases/` — original v1 standalone application build.
 - `data/control_catalog.json` — canonical structured control library (95 original + 74 extended).
 - `data/control_catalog.csv` — flat export of the same control library.
 - `docs/` — project charter, requirements, enterprise architecture, security architecture, IT audit, GRC, security & compliance, system hardening, data model, threat model and operating model.

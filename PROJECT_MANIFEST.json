@@ -20,9 +20,9 @@
     "docs/ENTERPRISE_ARCHITECTURE.md",
     "docs/SECURITY_ARCHITECTURE.md",
     "app/index.html",
+    "app/releases/CIO_CTO_CISO_Readiness_App_v1.html",
     "deliverables/CIO_CTO_CISO_Checklist_corrected.xlsx",
     "source/CIO_CTO_CISO_Checklist_Workflow.png",
-    "source/CIO_CTO_CISO_Readiness_App_v1.html",
     "source/CIO_CTO_CISO_Checklist_original.pdf",
     "source/CIO_CTO_CISO_Checklist_original.xlsx",
     "database/schema.sql",
@@ -40,12 +40,7 @@
   "package_version": "2.1",
   "package_scope": "Consolidated from original source files, both application builds, extended control library, documentation and starter implementation.",
   "additional_files": [
-    "START_HERE.md",
-    "app/releases/CIO_CTO_CISO_Readiness_App_v1.html",
-    "app/releases/Enterprise_Technology_Security_GRC_Readiness_Hub_v2.html",
-    "original_inputs/CIO_CTO_CISO_Checklist.pdf",
-    "original_inputs/CIO_CTO_CISO_Checklist.xlsx",
-    "original_inputs/CIO_CTO_CISO_Checklist_Workflow.png"
+    "START_HERE.md"
   ],
-  "total_files_in_package": 40
+  "total_files_in_package": 35
 }

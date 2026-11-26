@@ -3,32 +3,29 @@
 | Relative path | Size (bytes) | SHA-256 |
 |---|---:|---|
 | `.env.example` | 457 | `0896f779d128d3ad8f212905de8510b18e4a454b40fede24d1b7594a000c77be` |
-| `.gitignore` | 131 | `e359a59b9cdd8ea44979dadc09e2a2f1979167a410ca58842754aea4f96d51b3` |
+| `.gitignore` | 157 | `ad1ae0be2360be3ba1b0e5fe5088d5a675bb45d3406215014b3966f3d7827de3` |
 | `.pytest_cache/.gitignore` | 37 | `3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd` |
 | `.pytest_cache/CACHEDIR.TAG` | 191 | `37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4` |
 | `.pytest_cache/README.md` | 302 | `73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad` |
 | `.pytest_cache/v/cache/nodeids` | 86 | `8e83f999588a62ef9dc6d29c866fedaa36ce63ab6851d3e4ef77591cfbffc138` |
-| `GRC_README.md` | 3716 | `d92b65bb6f295818ad6f3714f638c93b4c959341a8f4c00b2e955cfb87dd1d29` |
+| `GRC_README.md` | 3772 | `5cbbf5ffa3de8eee95b26d74eea53a39309bb2298992166f1dd3e2767b97ed56` |
 | `LICENSE` | 11357 | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
-| `PROJECT_MANIFEST.json` | 1799 | `fd60f0e0381fab9648fd1c0ea2ce175d19e253ecc43e4ee5995ce0f3ac7236b8` |
-| `README.md` | 6187 | `4cc7821a391c29bbd12ddca61ebbd723097d14b32ba0e841be1639c822fa1738` |
+| `PROJECT_MANIFEST.json` | 1513 | `f4bbe6e2ea40ac4f37e66686084967c8f0f94d0c0b46a103e7f26e1e227d5c83` |
+| `README.md` | 6408 | `18445b4b7131eed33bd5fe310bc32cea6470086fd235734c7d2e7a52a5981dca` |
 | `SECURITY.md` | 619 | `ba9643955bfcb04524a6fe5a8c2929b54abc2e67bb3480ce806e742d506e4dc9` |
-| `START_HERE.md` | 1976 | `14810143d911720e81036f5f03b7bdd3efa0730c40592cde2886a58cafb41bd0` |
-| `Screenshot_20261018_171026.png` | 73734 | `a6a9bccccdd0f105d46faacf75fdee255d6dd84960e642fb93fe8822e45c2d26` |
+| `START_HERE.md` | 1983 | `b6c7d02e3d609cc87bb7b111e85e5e97832636556a31e840cb7a6e4049654148` |
+| `TODAY_LAUNCH_CHECKLIST.md` | 972 | `c57198fb9c36379fe39e9b78d4e6992498dafd6689129df7fa1b5f828fb19be9` |
+| `VALIDATION_STATUS.md` | 1113 | `216a3b4a35466ceda1cdc710bba823d74c0bbbe921493570c6792f8114aeb645` |
 | `app/csuite.ts` | 1955 | `3859b2ab29f49f6d9bc656109a9ece074a30d7ec8850a92b473075450ff65891` |
 | `app/index.html` | 83552 | `a4f8f7d1909b19f75c7411009516eb60d3ae280289d664fa282ade77b5b7e32a` |
 | `app/layout.tsx` | 345 | `118e1cede55a33815a9125a300e7ea804c571fdb515b2fd3038d132b6c45d387` |
 | `app/page.tsx` | 29169 | `eb658be048c3fed9e461e2f3adc96a8e6fc6663e1ce2d01bcec5627c560e48e7` |
 | `app/releases/CIO_CTO_CISO_Readiness_App_v1.html` | 52206 | `264ceeea00f8888ae3a9cd1aeb7f74dc3b234d3e26b466671b4963a44539f98a` |
-| `app/releases/Enterprise_Technology_Security_GRC_Readiness_Hub_v2.html` | 83552 | `a4f8f7d1909b19f75c7411009516eb60d3ae280289d664fa282ade77b5b7e32a` |
 | `app/styles.css` | 5508 | `a7b7357793dee80c54060c3acf795a1f716f7568478a836aef37427779f29343` |
 | `app/teamMembers.ts` | 1459 | `4938dcdfc73063fe5e9d5c56c65526e09455996acba0363cd1d1286ef7972ef8` |
 | `backend/app/__init__.py` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `backend/app/__pycache__/__init__.cpython-313.pyc` | 173 | `e5d84a604b8b09db67cb3de39281ee3838b8e9f2397a64bc6176858d8a3fd9cd` |
-| `backend/app/__pycache__/main.cpython-313.pyc` | 2500 | `0f4d238b8996e408a6c56fcf3441856549d680cd364d9e742bab6d323e8d6bed` |
 | `backend/app/main.py` | 1311 | `6c3da850df032f993b9ed8d458fd1529c4481acaa74d0e51079bddf10f1598dc` |
 | `backend/requirements.txt` | 84 | `eef8934f44ff39098fd84df287a15304e91f989b4a9fc7b58c4b1043309b6ffb` |
-| `backend/tests/__pycache__/test_catalog.cpython-313-pytest-9.1.1.pyc` | 2705 | `61ad9f60df2de2c0686f8dbe4e94cf2c4ecafc3206a9bae987fef4fbd15b4d03` |
 | `backend/tests/test_catalog.py` | 310 | `0be66bb61cfdeae0a51db438b8d7f6cd1f06e9c627f3061acce9abdcd6339793` |
 | `check-linux.sh` | 1044 | `dd6332e0f3c82d0b6627ddef9c086f59d5b48c4b7f291430e5d456b2fba92b9d` |
 | `data/control_catalog.csv` | 33342 | `e6c039411582e74eaa0a3d88b3a73377b79bcc79d99f6ddcb7f3c41413571a2b` |
@@ -52,9 +49,6 @@
 | `lib/supabase.ts` | 469 | `5966bd2aed0cb651eed1358e68c439175c5be478901d43270547fdd0c7d6a8e9` |
 | `next-env.d.ts` | 328 | `e3e5602345bcf00c3181dac2a498f4ba395cd6813f8cff09e8a4604379e008f0` |
 | `next.config.ts` | 126 | `d99e1604d04332407b57a7bc43317b5ba8415d1fe2a93da17fb703fe6f10d1d4` |
-| `original_inputs/CIO_CTO_CISO_Checklist.pdf` | 21634 | `637ad4b1be2cbd51f3e599242dcb3ed37ab29c7163da7e3db853468a63b48b14` |
-| `original_inputs/CIO_CTO_CISO_Checklist.xlsx` | 23214 | `ca8bcc0165b8aae66403c09c2679942d025d44867bf438254dfec991ca72b018` |
-| `original_inputs/CIO_CTO_CISO_Checklist_Workflow.png` | 365083 | `87143886ff37c19334ff5c892dc9b266609131ad42799fe224b535d67238a23c` |
 | `package-lock.json` | 35468 | `4226ca853b9d0cbbaea8b25e33463ec3a4f76bc8dab256e8661eeef6564add04` |
 | `package.json` | 455 | `462fa928a276dc12885311dd8cdf783954aee25af33da26fc57b7fe5b294d041` |
 | `run-local.sh` | 737 | `44c266aa0a08159211c6ca7339329eb34b8585e0fc5d629b1bc3843ad1dc5b28` |
@@ -63,7 +57,6 @@
 | `source/CIO_CTO_CISO_Checklist_Workflow.png` | 365083 | `87143886ff37c19334ff5c892dc9b266609131ad42799fe224b535d67238a23c` |
 | `source/CIO_CTO_CISO_Checklist_original.pdf` | 21634 | `637ad4b1be2cbd51f3e599242dcb3ed37ab29c7163da7e3db853468a63b48b14` |
 | `source/CIO_CTO_CISO_Checklist_original.xlsx` | 23214 | `ca8bcc0165b8aae66403c09c2679942d025d44867bf438254dfec991ca72b018` |
-| `source/CIO_CTO_CISO_Readiness_App_v1.html` | 52206 | `264ceeea00f8888ae3a9cd1aeb7f74dc3b234d3e26b466671b4963a44539f98a` |
 | `supabase/schema.sql` | 2961 | `153905970fc0d61d1802ca834abc243e07018550fa1aee4d255b5e9046c1dc8b` |
 | `tsconfig.json` | 421 | `a66dcac7cbd5252085cc0401391e56afd2578ec0f212b4d800ab03e168cfbce3` |
 | `tsconfig.tsbuildinfo` | 104677 | `7339d99fcc2fd9b28c4ea4b46b96e4b0361006a306b5809d53bb704c2f962808` |

@@ -1,6 +1,8 @@
 # Executive Notes — Linux Edition
 
-A focused, private workspace for executive notes, board decisions, strategy, and task delegation.
+A focused, private workspace for executive notes, board decisions, strategy, and task delegation. The repository also bundles a **GRC Readiness archive** (169-control governance/risk/compliance catalogue, docs, FastAPI starter, and PostgreSQL schema) — see [`GRC_README.md`](GRC_README.md) and [`START_HERE.md`](START_HERE.md).
+
+For project layout see [`STRUCTURE.md`](STRUCTURE.md); for deployment see the [`hosting/`](hosting/README.md) folder.
 
 ---
 
@@ -55,7 +57,7 @@ Run the automated Linux validation pipeline:
 ./check-linux.sh
 ```
 
-This script verifies your Node.js version, ensures dependencies are installed, runs TypeScript typechecking (`tsc --noEmit`), and executes a production build (`next build`).
+This script verifies your Node.js version, ensures dependencies are installed, runs ESLint (`eslint .`), TypeScript typechecking (`tsc --noEmit`), and executes a production build (`next build`).
 
 ---
 
@@ -69,6 +71,9 @@ export PATH="/usr/bin:/usr/local/bin:$PATH"
 
 # Install project dependencies
 npm install
+
+# Lint the codebase (ESLint flat config)
+npm run lint
 
 # Typecheck TypeScript files without emitting output
 npm run typecheck
@@ -129,21 +134,33 @@ To switch from Local Demo mode to a production or development Supabase project:
 
 ## Validation Status
 
-Verified on 2026-11-26 (Node.js v20.19.2):
+Verified on 2026-11-26 (Next.js 16.4.6, Node.js v20.19.2):
 
 - [x] **Dependencies**: Installed via `npm install` (`node_modules` present, `package-lock.json` generated).
+- [x] **Lint**: `npm run lint` (ESLint flat config) passes with 0 errors / 0 warnings.
 - [x] **TypeScript**: `npm run typecheck` (`tsc --noEmit`) passes with 0 errors.
 - [x] **Production Build**: `npm run build` compiles and prerenders static routes cleanly.
 - [x] **Note Allocation Feature**: Implemented across UI and database schema.
 - [x] **GRC Catalog**: `python3 scripts/validate_catalog.py` → PASS (11 domains, 169 controls, unique IDs).
+- [x] **Backend Tests**: `python3 -m pytest backend/tests/` → 1 passed.
 - See [`VALIDATION_STATUS.md`](VALIDATION_STATUS.md) and [`TODAY_LAUNCH_CHECKLIST.md`](TODAY_LAUNCH_CHECKLIST.md) for details.
 
 > Node.js 22 LTS is recommended; `@supabase/supabase-js` deprecates Node.js 20 for future releases.
 
+## Hosting & Deployment
+
+Cloud and on-premises hosting recommendations, plus Docker Compose for local PostgreSQL, live in the [`hosting/`](hosting/README.md) folder:
+
+- **Cloud (fastest)**: Vercel (Next.js) + Supabase (auth/Postgres/RLS).
+- **Cloud (enterprise)**: AWS (Amplify/ECS + RDS/Cognito) or Azure (App Service + Entra + Postgres Flexible).
+- **On-prem**: Docker Compose / Kubernetes on Linux + self-managed Postgres; air-gapped via internal image mirror.
+
 ## Recent changes
 
-- Added `run-local.sh` and `check-linux.sh` helper scripts and `.env.example` referenced by this README.
-- Renamed the misnamed `gitignore` to `.gitignore` so `node_modules/`, `.next/`, and `.env*` are actually ignored.
-- Removed the dead `pages/_document.tsx` (App Router `app/layout.tsx` renders the document).
-- Renamed the GRC archive readme to `GRC_README.md` and regenerated `FILE_INVENTORY.md`.
-- Refactored C‑Suite member definitions into `app/csuite.ts`; added quick‑allocate chip tray and C‑Suite filter UI.
+- Added ESLint (`eslint.config.mjs`, `npm run lint`) and fixed all lint warnings; lint is now part of `check-linux.sh`.
+- Upgraded to **Next.js 16.4.6** and applied the required `tsconfig` changes; lint, typecheck, and build verified.
+- Added a dedicated **`hosting/`** folder (cloud + on-premises guides, `docker-compose.yml`, `.env.example`) moved from `deployment/`.
+- Added `run-local.sh`, `check-linux.sh`, and `.env.example` referenced by this README.
+- Renamed the misnamed `gitignore` to `.gitignore`; removed the dead `pages/_document.tsx`.
+- Removed duplicate/unwanted files (duplicate `original_inputs/`, stray screenshot, duplicate release HTML) and regenerated `FILE_INVENTORY.md`.
+- Added [`STRUCTURE.md`](STRUCTURE.md) documenting the project layout; renamed GRC readme to `GRC_README.md`.

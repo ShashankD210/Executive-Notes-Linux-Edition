@@ -29,6 +29,9 @@ if [ ! -d node_modules ]; then
   npm install
 fi
 
+echo "==> Lint (eslint .)"
+npm run lint
+
 echo "==> Typecheck (tsc --noEmit)"
 npm run typecheck
 

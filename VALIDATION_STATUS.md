@@ -5,6 +5,7 @@ _Last verified: 2026-11-26_
 ## Executive Notes (Next.js app)
 
 - [x] **Dependencies**: Installed via `npm install` (`node_modules` present, `package-lock.json` generated).
+- [x] **Lint**: `npm run lint` (ESLint flat config) passes with 0 errors and 0 warnings.
 - [x] **TypeScript**: `npm run typecheck` (`tsc --noEmit`) passes with 0 errors.
 - [x] **Production Build**: `npm run build` (`next build`) compiles and prerenders static routes cleanly.
 - [x] **Note Allocation Feature**: Implemented across UI and database schema (`supabase/schema.sql`).

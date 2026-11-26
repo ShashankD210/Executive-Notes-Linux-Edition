@@ -33,6 +33,7 @@ This repository contains two related deliverables:
 ├── docs/                 # GRC architecture, security, audit, roadmap, etc.
 ├── scripts/              # Catalog validator + workbook formula repair
 ├── source/               # Original supplied PDF, workbook, workflow image
+├── eslint.config.mjs     # ESLint flat config (next/core-web-vitals + typescript)
 ├── run-local.sh          # Dev server helper (127.0.0.1:3000)
 ├── check-linux.sh        # Validation pipeline (typecheck + build)
 ├── .env.example          # Supabase env template
@@ -68,7 +69,8 @@ using browser localStorage. Add real Supabase credentials and apply
 ## Verification commands
 
 ```bash
-./check-linux.sh                                   # typecheck + production build
+./check-linux.sh                                   # lint + typecheck + production build
+npm run lint                                       # ESLint only
 python3 scripts/validate_catalog.py                # GRC catalogue integrity
 python3 -m pytest backend/tests/ -q                # backend tests
 ```

@@ -1,9 +1,9 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { createClient } from '../lib/supabase';
 
 import { CSUITE_MEMBERS, findCSuiteMember } from './csuite';
-import { getTeamMembers, addTeamMember, TeamMember, TEAM_MEMBERS, loadTeamMembers, persistTeamMembers } from './teamMembers';
+import { getTeamMembers, addTeamMember, loadTeamMembers, persistTeamMembers } from './teamMembers';
 type Note = {
   id: string;
   title: string;
@@ -204,7 +204,7 @@ export default function Home() {
     setMessage(`Added ${newMemberName} to ${selectedMember.role}.`);
   };
 
-  async function loadNotes() {
+  const loadNotes = useCallback(async () => {
     if (!client) {
       try {
         const saved = localStorage.getItem('executive-notes-demo');
@@ -233,7 +233,7 @@ export default function Home() {
     } else {
       setNotes(data || []);
     }
-  }
+  }, [client]);
 
   useEffect(() => {
     if (!client) {
@@ -263,7 +263,7 @@ export default function Home() {
     });
 
     return () => subscription.unsubscribe();
-  }, [client]);
+  }, [client, loadNotes]);
 
   const filtered = useMemo(() => {
     const currentEmail = (user?.email || '').toLowerCase();
